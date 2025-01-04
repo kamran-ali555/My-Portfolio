@@ -1,41 +1,37 @@
-// const switchBtns = document.querySelectorAll(".switch-btn")
-// const homeflex = document.querySelectorAll(".home-flex")
+// const page1 = document.querySelector('#home-one');
+// const page2 = document.querySelector('#home-two');
+// const button = document.getElementById('switch-btn-one');
+// let isPage1Visible = true;
 
-// switchBtns.forEach(function(switchs, index){
-//     switchs.addEventListener('click', function(){
-//         switchBtns.forEach(function(op, ind){
-//             if(ind === index){
-//                 // op.style.color = 'green'
-//                 homeflex[ind].style.display = 'block'
-//             }else{
-//                 //  op.style.color = 'black'
-//                 homeflex[ind].style.display = 'none'
-//             }
-//         })
-//     })
-// })
+// button.addEventListener('click', () => {
+//   if (isPage1Visible) {
+//     page1.style.transform = 'translateX(-1440px)';
+//     page2.style.transform = 'translateX(0)';
+//   } else {
+//     page1.style.transform = 'translateX(0)';
+//     page2.style.transform = 'translateX(-1440px)';
+//   }
+//   isPage1Visible = !isPage1Visible;
+// });
 
-const homeOne = document.getElementById("home-one")
-const homeTwo = document.getElementById("home-two")
-const switchOne = document.getElementById("switch-btn-one")
-const switchTwo = document.getElementById("switch-btn-two")
 
-function btnone(){
-    console.log(homeTwo.style.left)
-    if (homeTwo.style.left === "-1440px") {
-        homeTwo.style.left = "0px"
-    }else{
-    homeOne.style.display ="none"
-    // homeTwo.style.left = "0px"
+
+
+const page1 = document.querySelector('#home-one');
+const page2 = document.querySelector('#home-two');
+let isPage1Visible = true;
+
+// Function to toggle pages
+function togglePages() {
+  if (isPage1Visible) {
+    page1.style.transform = 'translateX(-1440px)';
+    page2.style.transform = 'translateX(0)';
+  } else {
+    page1.style.transform = 'translateX(0)';
+    page2.style.transform = 'translateX(-1440px)';
+  }
+  isPage1Visible = !isPage1Visible;
 }
-    // homeTwo.style.left = "0px",
-    // homeOne.style.display ="none"
-}
-// function btntwo(){
-//     homeTwo.style.left = "0px",
-//     homeOne.style.display ="none"
-// }
 
-switchOne.addEventListener("click",btnone) 
-
-// switchTwo.addEventListener("click", btntwo)
+// Automatically toggle pages every 5 seconds
+setInterval(togglePages, 5000);
