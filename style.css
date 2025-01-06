@@ -102,7 +102,7 @@ position: relative;
   letter-spacing: 1px;
 }
 .main-heading>h1 {
-  font-size: 63px;
+  font-size: 62px;
   font-weight: bolder;
   line-height: 80px;
   margin-top: 20px;
@@ -143,7 +143,7 @@ font-family: "Kanit", sans-serif;
 
 }
 .main-heading>p{
-    font-size: 34px;
+    font-size: 33px;
     font-size: 800;
     margin-top: 30px;
     line-height: 50px;
@@ -586,8 +586,6 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
 
 }
 
-
-
 /* Order Now */
 .section-four-form{
   text-align: center;
@@ -622,28 +620,18 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
   margin-top: 40px;
 }
 .style-form{
-  height: 35px;
+  height: 44px;
   width: 500px;
-}
-.style-form-option{
-  height: 35px;
-  width: 500px;
-  border: 1px solid rgb(156, 156, 156);
-  border-radius: 5px;
-}
-.style-entry-out{
-  width: 248px;
-  height: 35px;
 }
 .address{
   width: 500px;
-  height: 50px;
+  height: 44px;
   border: 1px solid rgb(156, 156, 156);
   border-radius: 5px;
 }
 .message{
   width: 500px;
-  height: 70px;
+  height: 100px;
   border: 1px solid rgb(156, 156, 156);
   border-radius: 5px;
 }
