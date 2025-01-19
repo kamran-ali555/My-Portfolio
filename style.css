@@ -8,6 +8,9 @@
   box-sizing: border-box;
   font-family: "Cabin", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 
 html {
   background-color: #000000;
@@ -15,10 +18,16 @@ html {
 }
 
 /* Navber section */
-.navbar-ul>li>a {
+.navbar-ul>li>a{
   text-decoration: none;
   padding-bottom: 5px;
   color: #fff;
+}
+.navbar-ul>li>button>a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  padding: 15px 30px;
 }
 .navbar-ul>li>a:hover{
   border-width: 3px;
@@ -30,8 +39,8 @@ html {
   border-style: hidden hidden solid hidden;
   color: #ffbd39;
 }
-.navbar-ul>li>a:h {
-  color: #ffbd39;
+.navbar-ul>li>a:hover{
+  /* color: #ffbd39; */
 
 }
 
@@ -58,13 +67,33 @@ html {
   justify-content: center;
   align-content: center;
   gap: 50px;
-  padding-top: 20px;
+  padding-top: 27px;
 }
-.name h1 {
+.name h1{
   padding-top: 15px;
   font-size: 30px;
   font-weight: 1000;
-    font-family: "Kanit", sans-serif;
+  font-family: "Kanit", sans-serif;
+}
+.name h1>span{
+  color: #ffbd39;
+  padding-top: 15px;
+  font-size: 30px;
+  font-weight: 1000;
+  font-family: "Kanit", sans-serif;
+}
+
+.navbar-ul>li>button{
+  border: none;
+  background-color: #ffbd39;
+  border-radius: 50px;
+  margin-top: -10px;
+  padding: 15px 0px;
+}
+.navbar-ul>li>button:hover{
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
 }
 
 /* HOME SECTION */
@@ -108,11 +137,12 @@ position: relative;
   margin-top: 20px;
   font-family: "Kanit", sans-serif;
 }
-.btn-hire-me-home {
+.btn-hire-me-home{
   border: none;
   background-color: #ffbd39;
   color: #000000;
-  padding: 15px 30px;
+  padding: 15px 0px;
+  margin-right: 50px;
   border-radius: 50px;
 }
 .btn-hire-me-home>a {
@@ -120,19 +150,21 @@ position: relative;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1px;
+  padding: 15px 30px;
   text-decoration: double;
 }
-.btn-my-work-home {
+.btn-my-work-home{
   border: 1px solid #fff;
   background-color: #000000;
   color: #000000;
-  padding: 15px 30px;
+  padding: 15px 0px;
   border-radius: 50px;
   margin-top: 60px;
 }
-.btn-my-work-home>a {
+.btn-my-work-home>a{
   color: #fff;
   font-size: 13px;
+  padding: 15px 30px;
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
@@ -149,30 +181,7 @@ font-family: "Kanit", sans-serif;
     line-height: 50px;
     letter-spacing: 1px;
 }
-.switch-home{
-margin-top: 50px;
-margin-bottom: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
-position: absolute;
-right: 0;
-left: 0;
-bottom: -680px;
-}
 
-#switch-btn-one{
-margin-left: 10px;
-width: 30px;
-height: 30px;
-border: 1px solid white;
-border-radius: 50%;
-background: #ffbd39;
-display: flex;
-justify-content: center;
-align-items: center;
-}
 .btn-hire-me-home:hover{
   -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
@@ -231,24 +240,12 @@ align-items: center;
   color: #fff;
   font-size: 18px;
 }
-.details-about>button{
-  border: none;
-  background-color: #ffbd39;
-  color: #000000;
-  padding: 15px 30px;
-  border-radius: 50px;
-  margin-top: 50px;
-}
+
 .flex-about{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
-}
-.details-about>button:hover{
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
-  box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
 }
 
 
@@ -539,7 +536,7 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
 
 
 
-/* Services SECTION */
+/* projects SECTION */
 
 .Service{
   max-width: 1440px;
@@ -547,7 +544,6 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
   margin: 0 auto;
   position: relative;
   padding-top: 20px;
-  border: 1px solid red;
 }
 .Service>h1{
   align-items: center;
@@ -647,6 +643,12 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
 input{
   border: 1px solid rgb(156, 156, 156);
   border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+.message{
+  padding: 5px;
+  font-size: 16px;
 }
 
 /* //footer section */
