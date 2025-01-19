@@ -475,63 +475,50 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
   letter-spacing: 1px;
   line-height: 20p
 }
-.skill-items-html{
-  height: 20px;
-  background-color: #ffbd39;
-  width: 380px;
-  height: 10px;
-  margin-top: 15px;
-}
-.skill-items-css{
-  height: 20px;
-  background-color: #ffbd39;
-  width: 340px;
-  height: 10px;
-  margin-top: 15px;
-}
-.skill-items-tailwind{
-  height: 20px;
-  background-color: #ffbd39;
-  width: 380px;
-  height: 10px;
-  margin-top: 15px;
-}
-.skill-items-bootstrap{
-  height: 20px;
-  background-color: #ffbd39;
-  width: 380px;
-  height: 10px;
-  margin-top: 15px;
-}
-.skill-items-js{
-  height: 20px;
-  background-color: #ffbd39;
-  width: 320px;
-  height: 10px;
-  margin-top: 15px;
-}
-.skill-items-react{
-  height: 20px;
-  background-color: #ffbd39;
-  width: 320px;
-  height: 10px;
-  margin-top: 15px;
-}
-#hr-tag{
-  width: 400px;
-  color: #fff;
-  margin-bottom: 50px;
-}
-.inner-div-one>p>span{
-  width: 450px;
-  height: 10px;
-  background-color: #ffbd39;
-}
+
 .skill-outer-div{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 60px;
+}
+.inner-div-one{
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.inner-div-one h3 div{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+.comman-bar span{
+  display:block;
+  height:100%;
+  background-color: #ffbd39;
+  border-radius: 50rem;
+}
+.skill-bar{
+  width: 500px;
+  background:#ccc;
+  overflow:hidden;
+  height:1rem;
+  border-radius: 50rem;
+}
+.skill-bar-html-taiwind-bootstrap>span{
+  width: 450px;
+}
+.skill-bar-javascript>span{
+  width: 400px;
+}
+.skill-bar-css3-react>span{
+  width: 425px;
 }
 
 
@@ -581,6 +568,7 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
   padding-top: 60px;
 
 }
+
 
 /* Order Now */
 .section-four-form{
@@ -655,7 +643,14 @@ input{
 
 .footer-section{
   max-width: 1440px;
-  margin-top: 20px;
+  height: 450px;
+  margin: 0 auto;
+}
+.footer-secton{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 .footer-div{
   display: flex;

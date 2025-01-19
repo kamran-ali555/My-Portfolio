@@ -17,3 +17,10 @@ function togglePages() {
 
 // Automatically toggle pages every 5 seconds
 setInterval(togglePages, 5000);
+
+window.onmousemove = (e) =>{
+  cursor1.style.top = e.pageY + 'px';
+  cursor1.style.left = e.pageX + 'px';
+  cursor2.style.top = e.pageY + 'px';
+  cursor2.style.left = e.pageX + 'px';
+}
